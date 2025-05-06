@@ -20,7 +20,7 @@ default_graph = {
 
 # Sidebar for graph customization
 st.sidebar.header("Graph Setup")
-custom_graph  st.sidebar.checkbox("Use custom graph?")
+custom_graph = st.sidebar.checkbox("Use custom graph?")
 if custom_graph:
     graph_input = st.sidebar.text_area(
         "Graph as adjacency list (e.g., A:B,C)",
@@ -77,7 +77,7 @@ def dfs_with_stack(graph, start):
 
         # Display status
         st.write(f"🔴 **Current Node**: `{current}`")
-        st.write(f"✅ **Visited**: `{listvisited)}`")
+        st.write(f"✅ **Visited**: `{list(visited)}`")
         time.sleep(1)
 
     return traversal
